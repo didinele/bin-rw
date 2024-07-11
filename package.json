@@ -42,7 +42,8 @@
 		"test:watch": "vitest",
 		"format": "prettier --write .",
 		"update": "yarn upgrade-interactive",
-		"postinstall": "is-ci || husky install || true"
+		"postinstall": "is-ci || husky install || true",
+		"prepack": "yarn build"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^18.2.0",
