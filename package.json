@@ -3,7 +3,7 @@
 	"description": "Simple, tiny, binary-driven encoding format",
 	"packageManager": "yarn@4.0.1",
 	"type": "module",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": {
 		"name": "Denis Cristea",
 		"email": "didinele.dev@gmail.com"
@@ -61,8 +61,5 @@
 		"turbo": "^1.10.16",
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.6"
-	},
-	"dependencies": {
-		"discord.js": "^14.14.1"
 	}
 }
