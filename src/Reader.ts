@@ -126,9 +126,9 @@ export class Reader {
 		return Number(value);
 	}
 
-	public array<T>(mapper: (buffer: this, index: number) => T): T[] {
+	public array<T>(mapper: (buffer: this, index: number) => T): T[] | null {
 		if (this.readNull(DataType.Array)) {
-			return [];
+			return null;
 		}
 
 		const length = this.#data.readUInt32LE(this.#offset);

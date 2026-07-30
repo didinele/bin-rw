@@ -22,14 +22,14 @@ export enum DataType {
 export type SimpleDataType = Exclude<DataType, DataType.Array | DataType.Null | DataType.Object>;
 
 export interface SimpleDataTypeToPrimitiveMap {
-	[DataType.Bool]: boolean;
-	[DataType.I8]: number;
-	[DataType.U8]: number;
-	[DataType.I16]: number;
-	[DataType.U16]: number;
-	[DataType.I32]: number;
-	[DataType.U32]: number;
-	[DataType.U64]: bigint;
-	[DataType.String]: string;
-	[DataType.Date]: number;
+	[DataType.Bool]: boolean | null;
+	[DataType.I8]: number | null;
+	[DataType.U8]: number | null;
+	[DataType.I16]: number | null;
+	[DataType.U16]: number | null;
+	[DataType.I32]: number | null;
+	[DataType.U32]: number | null;
+	[DataType.U64]: bigint | null;
+	[DataType.String]: string | null;
+	[DataType.Date]: number | null;
 }

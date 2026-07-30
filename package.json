@@ -3,7 +3,7 @@
 	"description": "Simple, tiny, binary-driven encoding format",
 	"packageManager": "yarn@4.0.1",
 	"type": "module",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"author": {
 		"name": "Denis Cristea",
 		"email": "didinele.dev@gmail.com"

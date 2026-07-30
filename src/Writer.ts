@@ -135,7 +135,7 @@ export class Writer {
 	}
 
 	public string(value?: string | null) {
-		if (!value?.length) {
+		if (value == null) {
 			return this.writeNull();
 		}
 
@@ -161,7 +161,7 @@ export class Writer {
 	}
 
 	public array<T>(values: readonly T[] | null, mapper: (buffer: this, value: T, index: number) => void) {
-		if (!values?.length) {
+		if (values == null) {
 			return this.writeNull();
 		}
 
